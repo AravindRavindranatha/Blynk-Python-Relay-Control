@@ -114,7 +114,7 @@ def write_handler_pin_handler(pin, value):
     if Doorlock =="1":
         p.ChangeDutyCycle(12.5)
         print("Door Locked")
-    elif Doorlock =="0"
+    elif Doorlock =="0":
         p.ChangeDutyCycle(7.5)
 try:
     while True:
