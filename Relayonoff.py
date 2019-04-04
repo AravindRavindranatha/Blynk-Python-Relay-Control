@@ -108,6 +108,14 @@ def write_handler_pin_handler(pin, value):
         print("R8-Off")
 # this will initialize servo to rotate
 
+@blynk.handle_event('write V8')
+def write_handler_pin_handler(pin, value):
+    Doorlock = (format(value[0]))
+    if Doorlock =="1":
+        p.ChangeDutyCycle(12.5)
+        print("Door Locked")
+    elif Doorlock =="0"
+        p.ChangeDutyCycle(7.5)
 try:
     while True:
         blynk.run()
