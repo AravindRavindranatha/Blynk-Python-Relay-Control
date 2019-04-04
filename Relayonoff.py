@@ -116,6 +116,7 @@ def write_handler_pin_handler(pin, value):
         print("Door Locked")
     elif Doorlock =="0":
         p.ChangeDutyCycle(7.5)
+        print("Door Unlocked")
 try:
     while True:
         blynk.run()
